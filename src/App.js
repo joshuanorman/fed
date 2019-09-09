@@ -1,11 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './images/sample-layout.png';
+// import logo from './images/stanger-things_raw.png';
 import './App.css';
+import Gallery from './components/Gallery.js';
+import Header from './components/Header.js';
+import Translate from './components/Translate';
+import About from './components/About';
+import Test from './components/Test';
+import { LangProvider } from './LangContext';
+// import 'react-bootstrap';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <LangProvider>
+    <div >
+      <Header />
+      <Translate />
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -18,8 +29,12 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
+        {/* <Test />  */}
+        <About />
+        <Gallery />
     </div>
+    </LangProvider>
   );
 }
 

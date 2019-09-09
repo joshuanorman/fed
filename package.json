@@ -3,9 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bootstrap": "^4.3.1",
+    "browserify-fs": "^1.0.0",
+    "constate": "^1.2.0",
+    "list-react-files": "^0.2.0",
     "react": "^16.9.0",
+    "react-bootstrap": "^1.0.0-beta.12",
     "react-dom": "^16.9.0",
-    "react-scripts": "3.1.1"
+    "react-scripts": "3.1.1",
+    "use-global-hook": "^0.1.10",
+    "words-to-numbers": "^1.5.1"
   },
   "scripts": {
     "start": "react-scripts start",
