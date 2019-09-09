@@ -4,21 +4,15 @@ import { LangContext } from '../LangContext';
 import wordsToNumbers from 'words-to-numbers';
 function About() {
     const [lang, setLang] = useContext(LangContext);
-    const order = lang.data['episode-list'];
-    console.log(lang.data);
-    const seasonTwo = order.filter(item => item.season === 2);
-    const seasonTwoNumbered = seasonTwo.map(item => wordsToNumbers(item.name)).sort();
-    console.log(seasonTwoNumbered)
-    const content = lang.data.heading;
-    console.log(content);
+    const content = lang.data.description;
     return (
         <>
-        <Container id="About">
+        <Container id="about" className="section-spacing">
         <Row>
-        <Col xs={12} md={8}>
+        <Col xs={12} md={6}>
             <Image src='/images/stanger-things_raw.png' fluid/>
         </Col>
-        <Col xs={6} md={4}>
+        <Col xs={12} md={6}>
             { content }
         </Col>
         </Row>

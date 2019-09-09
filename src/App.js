@@ -4,36 +4,20 @@ import React from 'react';
 import './App.css';
 import Gallery from './components/Gallery.js';
 import Header from './components/Header.js';
-import Translate from './components/Translate';
 import About from './components/About';
-import Test from './components/Test';
+import Episodes from './components/Episodes';
 import { LangProvider } from './LangContext';
-// import 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
 function App() {
   return (
     <LangProvider>
-    <div >
-      <Header />
-      <Translate />
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-        {/* <Test />  */}
-        <About />
-        <Gallery />
-    </div>
+    <Header />
+    <Container >
+    <About />
+    <Gallery />
+    <Episodes />
+    </Container>
     </LangProvider>
   );
 }
