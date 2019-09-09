@@ -3,6 +3,7 @@ import { Navbar, Nav } from 'react-bootstrap';
 import { LangContext } from '../LangContext';
 import  Translate from './Translate';
 
+
 function Header() {
     const [lang, setLang] = useContext(LangContext);
     return (
@@ -15,10 +16,10 @@ function Header() {
                 <Nav.Link href="#about">About</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link href="gallery">Gallery</Nav.Link>
+                <Nav.Link href="#gallery">Gallery</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-                <Nav.Link href="episodes">Episodes</Nav.Link>
+                <Nav.Link href="#episodes">Episodes</Nav.Link>
             </Nav.Item>
             <Translate />
             </Nav>
