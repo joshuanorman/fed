@@ -8,7 +8,7 @@ function Header() {
     return (
         <>
         <Navbar bg="light" variant="light">
-            <Navbar.Brand href="#home">{ lang.url.heading }</Navbar.Brand>
+            <Navbar.Brand href="#home">{ lang.heading }</Navbar.Brand>
         
         <Nav className="mr-auto justify-content-center">
             <Nav.Item>

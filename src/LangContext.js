@@ -7,7 +7,7 @@ const LangContext = createContext([{}, () => {}]);
 
 const LangProvider = (props) => {
   const [lang, setLang] = useState({
-    "lang": "english", "url": enLangData
+    'data': enLangData
   });
 
  return (

@@ -35,16 +35,16 @@ function Translate() {
 
   <Dropdown.Menu>
     <Dropdown.Item name="english" onClick={(e) => {setLang({
-    "lang": e.target.name, "url": EnLang
+     'data': EnLang
   }); {console.log({ lang })}; }}>English</Dropdown.Item>
     <Dropdown.Item name="pigLatin" onClick={(e) => {setLang({
-    "lang": e.target.name, "url": PlLang
+     'data': PlLang
   }); {console.log({ lang })}; }} >Pig Latin </Dropdown.Item> 
   </Dropdown.Menu>
 </Dropdown>
 {/* <AppContext.Provider>{(Langs) => <h1>{Langs.lang}</h1> }</AppContext.Provider>  */}
  {/* <Lang /> */}
- <h1>{ lang.lang }</h1>
+ <h1>{ lang.heading }</h1>
  </>
     );
     }

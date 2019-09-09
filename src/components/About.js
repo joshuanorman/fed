@@ -4,11 +4,12 @@ import { LangContext } from '../LangContext';
 import wordsToNumbers from 'words-to-numbers';
 function About() {
     const [lang, setLang] = useContext(LangContext);
-    const order = lang.url['episode-list'];
-    const seasonTwo = order.filter((item, num) => item.season === num);
+    const order = lang.data['episode-list'];
+    console.log(lang.data);
+    const seasonTwo = order.filter(item => item.season === 2);
     const seasonTwoNumbered = seasonTwo.map(item => wordsToNumbers(item.name)).sort();
     console.log(seasonTwoNumbered)
-    const content = lang.url.heading;
+    const content = lang.data.heading;
     console.log(content);
     return (
         <>

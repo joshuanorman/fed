@@ -14,9 +14,9 @@ import wordsToNumbers from 'words-to-numbers';
 function Gallery() {
     const [lang, setLang] = useContext(LangContext);
     let wordsTest = wordsToNumbers("I have twenty five ");
-    const CurrentLang = lang.url;
-    console.log(CurrentLang);
-    const gallerySrc  = CurrentLang.gallery;
+    // const CurrentLang = lang;
+    // console.log(CurrentLang);
+    const gallerySrc  = lang.data.gallery;
     const listGallery = gallerySrc.map((gallerySrc, index) =>
     <Carousel.Item key={ index }>
         <Image src={gallerySrc.src} alt="" fluid />
@@ -24,6 +24,6 @@ function Gallery() {
         <p> {gallerySrc.text} </p>
     </Carousel.Caption>
     </Carousel.Item>);
-    return (<> <p>  <br />{ console.log(lang.url) } </p> <Carousel className="d-block w-100" >{listGallery}</Carousel></>);
+    return (<> <p>  <br />{ console.log(lang) } </p> <Carousel className="d-block w-100" >{listGallery}</Carousel></>);
     };
 export default Gallery;
