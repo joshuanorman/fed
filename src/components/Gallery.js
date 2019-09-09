@@ -1,15 +1,15 @@
 import React, { useContext } from 'react';
-import { Carousel, Image, Container, Row, Column, Col } from 'react-bootstrap';
+import { Carousel, Image, Container, Row, Col } from 'react-bootstrap';
 import { LangContext }  from '../LangContext';
-import ReactPlayer from 'react-player';
+import 'video-react/dist/video-react.css';
+import { Player } from 'video-react';
 function Gallery() {
     const [lang, setLang] = useContext(LangContext);
     const url = lang.data['video-embed'];
-    console.log(url);
     const gallerySrc  = lang.data.gallery;
     const listGallery = gallerySrc.map((gallerySrc, index) =>
-    <Carousel.Item key={ index } className="gallery-item">
-        <Image src={gallerySrc.src} alt="" fluid d-block  />
+    <Carousel.Item key={ index } className="gallery-item fluid ">
+        <Image src={gallerySrc.src} alt=""   />
     <Carousel.Caption className="bg-dark mb-4" >
         <p> {gallerySrc.text} </p>
     </Carousel.Caption>
@@ -20,14 +20,7 @@ function Gallery() {
             <Carousel className="d-block w-100" >{listGallery}</Carousel>
             </Col>
             <Col xs={12} md={8}>
-            <div className='player-wrapper'>
-                <ReactPlayer
-                    className='react-player'
-                    url={ url }
-                    width='100%'
-                    height='100%'
-                />
-            </div>
+            <Player><source src={ url } /></Player>
             </Col>
         </Row>
     </Container>);

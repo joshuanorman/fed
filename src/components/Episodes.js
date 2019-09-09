@@ -13,13 +13,13 @@ function Episodes() {
     console.log(seasonOneNumbered);
     const seasonTwoNumbered = seasonTwo.map(item => wordsToNumbers(item.name)).sort();
     const episodesOne = seasonOneNumbered.map((seasonOneNumbered, index ) => 
-        <ListGroup.Item key={ index } className="" flush>{ seasonOneNumbered }  </ListGroup.Item >
+        <ListGroup.Item key={ index } >{ seasonOneNumbered }  </ListGroup.Item >
         );
     const episodesTwo = seasonTwoNumbered.map((seasonTwoNumbered, index ) => 
-        <ListGroup.Item key={ index } className="" flush>{ seasonTwoNumbered }  </ListGroup.Item >
+        <ListGroup.Item key={ index } >{ seasonTwoNumbered }  </ListGroup.Item >
         );
-        return( <Container id="episodes" className="section-spacing"><Row><Col xs={12} md={6}><ListGroup flush ><h2>Season One:</h2><br />{ episodesOne }</ListGroup></Col>
-        <Col xs={12} md={6}><ListGroup flush ><h2>Season Two:</h2><br />{ episodesTwo }</ListGroup></Col></Row></Container>
+        return( <Container id="episodes" className="section-spacing"><Row><Col xs={12} md={6}><ListGroup variant="flush" ><h2>Season One:</h2><br />{ episodesOne }</ListGroup></Col>
+        <Col xs={12} md={6}><ListGroup variant="flush" ><h2>Season Two:</h2><br />{ episodesTwo }</ListGroup></Col></Row></Container>
         );
     
 }

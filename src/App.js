@@ -1,6 +1,4 @@
 import React from 'react';
-// import logo from './images/sample-layout.png';
-// import logo from './images/stanger-things_raw.png';
 import './App.css';
 import Gallery from './components/Gallery.js';
 import Header from './components/Header.js';

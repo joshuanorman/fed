@@ -1,24 +1,8 @@
-// import fs from 'browserify-fs';
 
-// var fs = require('broswerify-fs');
-// const testnode = './tests/';
-// const fs = require('fs');
-
-// fs.readdir(testnode, (err, files) => {
-//   files.forEach(file => {
-//     console.log(file);
-//   });
-// });
-
-/****** In production 
+/****** In production on a node server to populate an array with a hypothetical idefinite number of language based json files
 const fs = require('fs');
 const cwd = process.cwd();
 const langFiles = fs.readdirSync(cwd+'/src/data');
 
 ***************************/
-import wordsToNumbers from 'words-to-numbers';
-const langFiles =[ 'en_US.json', 'la_PG.json' ];
-console.log(langFiles);
 
-export let wordsTest = wordsToNumbers("I have twenty five ");
-console.log(wordsTest)

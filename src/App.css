@@ -32,12 +32,13 @@
   }
 }
 
-.gallery-item{
-  /* max-height: 400px */
+.carousel, .video-react-video{
+  box-shadow: 1px 1px 12px  #333333c9;
 }
 .gallery-item{
   height: 400px;
   width: 400px;
+  
 }
 .gallery-item img{
   width:100%;

@@ -1,7 +1,7 @@
 import React, { useContext} from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import { LangContext } from '../LangContext';
-import wordsToNumbers from 'words-to-numbers';
+
 function About() {
     const [lang, setLang] = useContext(LangContext);
     const content = lang.data.description;

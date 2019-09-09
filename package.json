@@ -14,6 +14,7 @@
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.1.1",
     "use-global-hook": "^0.1.10",
+    "video-react": "^0.14.1",
     "words-to-numbers": "^1.5.1"
   },
   "scripts": {
