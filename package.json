@@ -6,10 +6,12 @@
     "bootstrap": "^4.3.1",
     "browserify-fs": "^1.0.0",
     "constate": "^1.2.0",
+    "cors": "^2.8.5",
     "list-react-files": "^0.2.0",
     "react": "^16.9.0",
     "react-bootstrap": "^1.0.0-beta.12",
     "react-dom": "^16.9.0",
+    "react-iframe": "^1.8.0",
     "react-player": "^1.12.0",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.1.1",
@@ -24,6 +26,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "proxy": "https://cors-anywhere.herokuapp.com",
   "eslintConfig": {
     "extends": "react-app"
   },
