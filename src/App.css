@@ -34,19 +34,19 @@
 }
 
 .carousel,
-.video-react-video {
+iframe {
   box-shadow: 1px 1px 12px #333333c9;
 }
 
 .gallery-item {
-  max-height: 400px;
-  max-width: 400px;
+  /* max-height: 400px; */
+ width: 400px;
 
 }
 
 .gallery-item img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .header-spacing {
@@ -60,9 +60,9 @@
   border-bottom: rgb(235, 39, 46) 2px solid;
 }
 
-.carousel-item>img {
+/* .carousel-item>img {
   width: 100%;
-}
+} */
 
 .carousel-caption {
   position: relative;
@@ -70,17 +70,7 @@
   top: 0;
 }
 
-.player-wrapper {
-  position: relative;
-  padding-top: 56.25%
-    /* Player ratio: 100 / (1280 / 720) */
-}
-
-.react-player {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+.
 
 .mcclatchy-embed {
   position: relative;

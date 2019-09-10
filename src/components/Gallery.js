@@ -15,10 +15,10 @@ function Gallery() {
     </Carousel.Item>);
     return (<Container id="gallery" className="section-spacing">
         <Row>
-            <Col xs={12} md={4}> 
+            <Col xs={12} md={6}> 
             <Carousel className="d-block w-100" >{listGallery}</Carousel>
             </Col>
-            <Col xs={12} md={8}>
+            <Col xs={12} md={6}>
             <IFrame url={ url }
             width = "640"
             height = "400"
