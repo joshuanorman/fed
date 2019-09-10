@@ -9,7 +9,7 @@ function Gallery() {
     const listGallery = gallerySrc.map((gallerySrc, index) =>
     <Carousel.Item key={ index } className="gallery-item fluid">
         <Image src={gallerySrc.src} alt=""   />
-    <Carousel.Caption  >
+    <Carousel.Caption  className="bg-dark">
         <p> {gallerySrc.text} </p>
     </Carousel.Caption>
     </Carousel.Item>);
