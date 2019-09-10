@@ -8,7 +8,7 @@ function Gallery() {
     const url = lang.data['video-embed'];
     const gallerySrc  = lang.data.gallery;
     const listGallery = gallerySrc.map((gallerySrc, index) =>
-    <Carousel.Item key={ index } className="gallery-item fluid ">
+    <Carousel.Item key={ index } className="gallery-item fluid">
         <Image src={gallerySrc.src} alt=""   />
     <Carousel.Caption className="bg-dark mb-4" >
         <p> {gallerySrc.text} </p>
@@ -20,7 +20,7 @@ function Gallery() {
             <Carousel className="d-block w-100" >{listGallery}</Carousel>
             </Col>
             <Col xs={12} md={8}>
-            <Player><source src={ url } /></Player>
+            <Player autoPlay><source src={ url } /></Player>
             </Col>
         </Row>
     </Container>);

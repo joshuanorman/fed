@@ -1,5 +1,5 @@
 import React, { useContext} from 'react';
-import { Container, Row, Col, Image, ListGroup } from 'react-bootstrap';
+import { Container, Row, Col, ListGroup } from 'react-bootstrap';
 import { LangContext } from '../LangContext';
 import wordsToNumbers from 'words-to-numbers';
 
@@ -10,7 +10,6 @@ function Episodes() {
     const seasonOne = order.filter(item => item.season === 1);
     const seasonTwo = order.filter(item => item.season === 2);
     const seasonOneNumbered = seasonOne.map(item => wordsToNumbers(item.name)).sort();
-    console.log(seasonOneNumbered);
     const seasonTwoNumbered = seasonTwo.map(item => wordsToNumbers(item.name)).sort();
     const episodesOne = seasonOneNumbered.map((seasonOneNumbered, index ) => 
         <ListGroup.Item key={ index } >{ seasonOneNumbered }  </ListGroup.Item >

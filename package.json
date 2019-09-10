@@ -13,6 +13,7 @@
     "react-player": "^1.12.0",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.1.1",
+    "redux": "^4.0.4",
     "use-global-hook": "^0.1.10",
     "video-react": "^0.14.1",
     "words-to-numbers": "^1.5.1"

@@ -8,7 +8,7 @@ function Header() {
     const [lang, setLang] = useContext(LangContext);
     return (
         <Navbar collapseOnSelect expand="sm" id="header" className="header-spacing" bg="dark" variant="dark" >
-            <Navbar.Brand href="#home">{ lang.data.heading }</Navbar.Brand>
+            <Navbar.Brand href="#header">{ lang.data.heading }</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto justify-content-center" >
